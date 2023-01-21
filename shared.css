@@ -1,0 +1,269 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Jost", sans-serif;
+}
+
+body {
+  background-color: #839ab0;
+  /* text-align: center; */
+}
+
+/* HEADER */
+header {
+  background-color: #010508;
+}
+
+.header {
+  max-width: 1240px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 2rem 1.8rem 1.5rem;
+  align-items: center;
+}
+
+.header--logo {
+  color: #dfdfdf;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.4rem;
+  letter-spacing: 0.15rem;
+}
+
+.header--nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.hamburger--nav__links {
+  display: none;
+}
+
+.about-main,
+.services-main,
+.contact-main {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(../images/satellite1.jpg) center/cover;
+  height: 53vh;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.about-main h1,
+.services-main h1,
+.contact-main h1 {
+  font-size: 4.2rem;
+  font-weight: 400;
+  letter-spacing: 0.4rem;
+  padding-bottom: 5rem;
+}
+
+/* TALK TO US */
+.talk {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/earthNight.jpg) 7%;
+  height: 50vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.talk-action p,
+.talk-action h2 {
+  color: white;
+  margin: 0 auto 1rem;
+  max-width: 510px;
+}
+.talk-action h2 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  letter-spacing: 6px;
+}
+.talk-action p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+.talk-action button {
+  color: #010508;
+  background-color: white;
+  padding: 0.5rem 2rem 0.5rem 2.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  letter-spacing: 0.4rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+/* HOME FOOTER */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  margin: 0 auto;
+  height: 5rem;
+  padding: 1.5rem 1.8rem 0;
+  font-weight: 500;
+  max-width: 1190px;
+}
+.footer--nav a {
+  text-decoration: none;
+  margin-right: 0.5rem;
+  color: #010508;
+}
+.footer--logo {
+  text-decoration: none;
+  color: #010508;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+}
+.hamburger--nav {
+  display: none;
+}
+
+/* MEDIA */
+/* screen width 1024px */
+@media screen and (max-width: 64rem) {
+  .header {
+    padding: 1rem;
+  }
+  .header--logo {
+    font-weight: 600;
+    font-size: 1.3rem;
+    letter-spacing: 0.15rem;
+  }
+  .header--nav a {
+    font-size: 0.9rem;
+  }
+  .about-main h1,
+  .services-main h1,
+  .contact-main h1 {
+    font-size: 3.2rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    padding-bottom: 3.5rem;
+  }
+  .talk {
+    height: 35vh;
+  }
+  .talk-action h2 {
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+    padding-right: 2%;
+  }
+  .talk-action p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    max-width: 450px;
+  }
+  .talk-action button {
+    margin: 0;
+  }
+  .footer {
+    padding: 1rem 1.25rem;
+    height: 3rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+  }
+  .footer--nav a {
+    margin-right: 0.2rem;
+  }
+  .footer--logo {
+    line-height: 1.2;
+  }
+}
+/* 601px */
+@media screen and (max-width: 37.6rem) {
+  .header--nav {
+    display: none;
+  }
+  .hamburger--nav {
+    display: block;
+  }
+  .hamburger--nav__toggle {
+    font-size: 1.5rem;
+    height: 45px;
+    width: 42px;
+    background-color: white;
+    color: #010508;
+    border: none;
+  }
+  .hamburger--nav__toggle__selected {
+    font-size: 1.5rem;
+    height: 45px;
+    width: 42px;
+    background-color: white;
+    color: #010508;
+    border: none;
+  }
+  .hamburger--nav__toggle__selected:hover {
+    cursor: pointer;
+  }
+  .hamburger--nav__toggle:hover {
+    cursor: pointer;
+  }
+  .hamburger--nav__links {
+    display: block;
+    list-style-type: none;
+    padding: 0 1rem 1rem;
+  }
+  .hamburger--nav__links a {
+    font-size: 0.9rem;
+    line-height: 4;
+    color: white;
+    text-decoration: none;
+  }
+  .hidden {
+    display: none;
+  }
+  .footer {
+    height: 5rem;
+    font-weight: 300;
+    font-size: 0.9rem;
+    align-items: center;
+  }
+  .footer--nav a {
+    margin-right: 0.2rem;
+  }
+  .footer--nav {
+    padding: 0 1rem 0;
+  }
+
+  .footer--logo {
+    line-height: 1.2;
+  }
+  .footer--copyright {
+    padding-left: 2rem;
+  }
+}
+@media screen and (max-width: 601px) {
+  .header {
+    position: relative;
+  }
+  .hamburger--nav__links {
+    position: absolute;
+    background-color: #01060999;
+    width: 100%;
+  }
+  .talk-action p {
+    padding: 1rem 2rem;
+  }
+  .talk-action button {
+    padding: 0.5rem 2rem 0.5rem 2.5rem;
+    font-size: 0.75rem;
+    margin: 0;
+  }
+}

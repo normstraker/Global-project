@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- parced first -->
+    <link rel="stylesheet" href="../shared.css" />
+    <!-- parced second -->
+    <link rel="stylesheet" href="./contact.css" />
+    <title>Global Project Contact</title>
+  </head>
+  <body>
+    <!-- CONTACT HEADER -->
+    <header>
+      <div class="header">
+        <a href="../index.html" class="header--logo"> <div>GLOBAL</div></a>
+        <nav class="header--nav">
+          <a href="../index.html">HOME</a>
+          <a href="../About/about.html">ABOUT</a>
+          <a href="../Services/services.html">SERVICES</a>
+          <a href="#">CONTACT</a>
+        </nav>
+        <nav class="hamburger--nav">
+          <button type="button" class="hamburger--nav__toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+          <button type="button" class="hamburger--nav__toggle__selected hidden">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </nav>
+      </div>
+      <ul class="hamburger--nav__links hidden">
+        <li>
+          <a href="../index.html">HOME</a>
+        </li>
+        <li><a href="../About/about.html">ABOUT</a></li>
+        <li><a href="../Services/services.html">SERVICES</a></li>
+        <li><a href="#">CONTACT</a></li>
+      </ul>
+    </header>
+    <!-- CONTACT HERO-->
+    <div class="contact-main">
+      <div class="contact-main__hero">
+        <h1>CONTACT US</h1>
+      </div>
+    </div>
+    <!-- CONTACT FORM -->
+    <section class="contact-section">
+      <div class="contact-container">
+        <div class="form-container">
+          <h2>Get In Touch</h2>
+          <form action="#">
+            <input type="text" id="username" placeholder="Your Name" required />
+            <input
+              type="number"
+              id="phone"
+              placeholder="Phone Number"
+              required
+            />
+            <input type="email" id="email" placeholder="Email" required />
+            <textarea id="message" rows="3.5" placeholder="Message"></textarea>
+            <button class="button--send">SEND NOW</button>
+          </form>
+        </div>
+        <div class="contact-details">
+          <h2>Talk To Us</h2>
+          <div class="contact-details-container">
+            <div class="contact-specifics">
+              <i class="fa-solid fa-envelope"></i>
+              <div class="contact-specific">
+                <h3>EMAIL</h3>
+                <p>something@tyler.com</p>
+              </div>
+            </div>
+            <div class="contact-specifics">
+              <i class="fa-solid fa-phone-volume"></i>
+              <div class="contact-specific">
+                <h3>PHONE NUMBER</h3>
+                <p>202-555-0188</p>
+              </div>
+            </div>
+            <div class="contact-specifics">
+              <i class="fa-solid fa-location-dot"></i>
+              <div class="contact-specific">
+                <h3>ADDRESS</h3>
+                <p class="contact-specific-address">
+                  2727 Ocean Road, Malibu, CA 90210
+                </p>
+              </div>
+            </div>
+            <div class="contact-specifics contact-specifics-social-container">
+              <h3>Follow Us:</h3>
+              <div class="contact-specific-social">
+                <a href="www.facebook.com"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+                <a href="www.twitter.com"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+                <a href="www.linkedin.com"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="www.youtube.com"><i class="fa-solid fa-play"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CONTACT FOOTER -->
+    <footer class="footer">
+      <div class="footer--nav">
+        <a href="../index.html">Home</a>
+        <a href="../About/about.html">About</a>
+        <a href="../Services/services.html">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <a href="../index.html" class="footer--logo"> <div>GLOBAL</div></a>
+      <div class="footer-copyright">&copy2022 Global. All rights reserved.</div>
+    </footer>
+    <script src="../shared.js"></script>
+  </body>
+</html>

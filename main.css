@@ -1,0 +1,203 @@
+main {
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url(./images/satellite1.jpg) top right no-repeat;
+  height: 100vh;
+  color: #ffffff;
+}
+
+/* HOME HERO */
+.home {
+  /* this is a meaningless property, should not affect site */
+  background-color: red;
+  /* HOME CONTAINER CARDS */
+  /* HOME ABOUT US */
+}
+
+.home-hero-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 84vh;
+  text-align: center;
+}
+
+.home-hero h1 {
+  font-size: 7rem;
+  font-weight: 400;
+  letter-spacing: 1rem;
+  line-height: 1;
+}
+
+.home-hero h2 {
+  font-weight: 300;
+  letter-spacing: 1rem;
+  margin-bottom: 1rem;
+}
+
+.home-hero button {
+  color: white;
+  background-color: #010508;
+  padding: 0.5rem 2rem 0.5rem 2.5rem;
+  font-size: 1rem;
+  border: none;
+  letter-spacing: 0.4rem;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.home-section1 {
+  margin: 0 auto 6.7rem;
+  padding: 5.25rem 2rem 0;
+  max-width: 1100px;
+}
+
+.home-container1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.home-container1-card {
+  max-width: 31%;
+  margin-bottom: 8.125rem;
+}
+
+.home-container1-card h2 {
+  margin: 1.2rem 0 0.2rem;
+  font-weight: 600;
+}
+
+.home-container1-card p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.home-container1-card img {
+  width: 100%;
+  height: 20.125rem;
+  object-fit: cover;
+}
+
+.home-container2 {
+  display: flex;
+}
+
+.home-container2-flex {
+  padding-right: 6.5rem;
+  margin: auto 0;
+}
+
+.home-container2-flex p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
+.home-container2 h2 {
+  font-size: 2.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.home-container2 img {
+  min-width: 48%;
+  max-height: 24.75rem;
+  object-fit: cover;
+}
+
+/* MEDIA */
+/* screen width 1024px */
+@media screen and (max-width: 64rem) {
+  .home-hero h1 {
+    font-size: 6rem;
+    letter-spacing: 0.5rem;
+  }
+  .home-hero h2 {
+    font-weight: 300;
+    letter-spacing: 0.6rem;
+    margin-bottom: 0;
+  }
+  .home-container1-card img {
+    width: 100%;
+    height: 17rem;
+    object-fit: cover;
+  }
+  .home-container1-card h2 {
+    margin: 0.7rem 0 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+  }
+  .home-container1-card p,
+  .home-container2-flex p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+  }
+  .home-container2 h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    padding-right: 2%;
+  }
+  .home-container2 img {
+    min-width: 35%;
+    max-height: 10%;
+    object-fit: cover;
+  }
+  .home-container2-flex {
+    padding-right: 0;
+    margin: auto 0;
+  }
+  .home-container2 {
+    display: flex;
+    margin: 0 2rem;
+  }
+  .home-container2-flex p {
+    padding-right: 10%;
+  }
+}
+/* 601px */
+@media screen and (max-width: 37.6rem) {
+  main {
+    height: 60vh;
+  }
+  .home-hero-main {
+    height: 50vh;
+  }
+  .home-hero h1 {
+    font-size: 4rem;
+    letter-spacing: 0.3rem;
+    line-height: 1.2;
+  }
+  .home-hero h2 {
+    letter-spacing: 0.5rem;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  .home-hero button {
+    padding: 0.5rem 2rem 0.5rem 2.5rem;
+    font-size: 0.75rem;
+  }
+  .home-container1 {
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
+  .home-container1-card {
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+  .home-container2 {
+    flex-direction: column-reverse;
+    margin-bottom: 1rem;
+  }
+  .home-section1 {
+    padding: 3rem 2rem 0;
+    margin-bottom: 1rem;
+  }
+  .home-container2 h2 {
+    margin-top: 1rem;
+  }
+}

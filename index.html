@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- ------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- parced first -->
+    <link rel="stylesheet" href="/shared.css" />
+    <!-- parced second -->
+    <link rel="stylesheet" href="/main.css" />
+    <title>Global Project Home</title>
+  </head>
+  <body>
+    <main>
+      <!-- HEADER -->
+      <header>
+        <div class="header">
+          <a href="#" class="header--logo"> <div>GLOBAL</div></a>
+          <nav class="header--nav">
+            <a href="#">HOME</a>
+            <a href="../About/about.html">ABOUT</a>
+            <a href="../Services/services.html">SERVICES</a>
+            <a href="../Contact/contact.html">CONTACT</a>
+          </nav>
+          <nav class="hamburger--nav">
+            <button type="button" class="hamburger--nav__toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+            <button type="button" class="hamburger--nav__toggle__selected hidden">
+              <i class="fa-solid fa-xmark"></i>
+            </button>
+          </nav>
+        </div>
+        <ul class="hamburger--nav__links hidden">
+          <li>
+            <a href="#">HOME</a>
+          </li>
+          <li><a href="../About/about.html">ABOUT</a></li>
+          <li><a href="../Services/services.html">SERVICES</a></li>
+          <li><a href="../Contact/contact.html">CONTACT</a></li>
+        </ul>
+      </header>
+      <!-- HOME HERO-->
+      <div class="home-hero-main">
+        <div class="home-hero">
+          <h1>GLOBAL</h1>
+          <h2>ENDLESS POSSIBILITIES</h2>
+          <a href="#engage"><button>ENGAGE</button></a>
+        </div>
+      </div>
+    </main>
+    <!-- HOME CONTAINER CARDS -->
+    <section id="engage" class="home-section1">
+      <div class="home-container1">
+        <div class="home-container1-card">
+          <img src="./images/crops1.jpg" alt="" />
+          <h2>Crop Design</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor
+            voluptas a laudantium repellat placeat ducimus?
+          </p>
+        </div>
+        <div class="home-container1-card">
+          <img src="./images/water1.jpg" alt="" />
+          <h2>Water Reclamation</h2>
+          <p>
+            Itaque ducimus ipsum velit fugit, nam voluptas eos quidem eveniet
+            quo magni deleniti, maxime minima suscipit?
+          </p>
+        </div>
+        <div class="home-container1-card">
+          <img src="./images/glaciation1.jpg" alt="" />
+          <h2>Glacier Monitoring</h2>
+          <p>
+            Lonsectetur adipisicing elit. Dolor voluptas a laudantium repellat
+            placeat. Itaque ducimus ipsum velit fugit.
+          </p>
+        </div>
+      </div>
+      <!-- HOME ABOUT US -->
+      <div class="home-container2">
+        <div class="home-container2-flex">
+          <h2>EYE IN THE SKY</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates,
+            enim obcaecati? Optio consectetur, fugit ex quasi et nesciunt,
+            eligendi harum deserunt voluptatem pariatur, impedit delectus!
+            Accusantium, eos alias!
+          </p>
+        </div>
+        <img src="./images/fisheye.jpg" alt="" />
+      </div>
+    </section>
+    <!-- HOME TALK TO US -->
+    <section class="talk">
+      <div class="talk-action">
+        <h2 class="talk-action--h2">TALK TO US</h2>
+        <p class="talk-action--paragraph">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          ratione nostrum distinctio tempore natus repellat.
+        </p>
+        <a href="#"><button>INITIATE</button></a>
+      </div>
+    </section>
+    <!-- HOME FOOTER -->
+    <footer class="footer">
+      <div class="footer--nav">
+        <a href="#">Home</a>
+        <a href="./About/about.html">About</a>
+        <a href="./Services/services.html">Services</a>
+        <a href="./Contact/contact.html">Contact</a>
+      </div>
+      <a href="#" class="footer--logo"> <div>GLOBAL</div></a>
+      <div class="footer--copyright">&copy2022 Global. All rights reserved.</div>
+    </footer>
+    <script src="./shared.js"></script>
+  </body>
+</html>

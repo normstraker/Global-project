@@ -1,0 +1,53 @@
+.services {
+  margin: 0 auto 7.2rem;
+  padding: 7.2rem 2rem 0;
+  max-width: 1160px;
+}
+.services-container {
+  display: flex;
+  margin-bottom: 8rem;
+}
+.services-container__statement {
+  margin: auto 0;
+}
+.services-container:nth-child(2) p, .services-container:nth-child(2) h2 {
+  margin: 0 0 1rem 7rem;
+}
+.services-container img {
+  min-width: 48%;
+  max-height: 24.75rem;
+  object-fit: cover;
+}
+.services-container h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.services-container p {
+  font-size: 1.1rem;
+  line-height: 1.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  margin-right: 7rem;
+}
+.services-container a {
+  display: flex;
+  margin-right: 7rem;
+}
+.services-container button {
+  color: white;
+  background-color: #010508;
+  padding: 0.5rem 2rem 0.5rem 2.5rem;
+  font-size: 1rem;
+  border: none;
+  letter-spacing: 0.4rem;
+  margin: 1rem auto;
+  cursor: pointer;
+}
+.services-container:nth-child(2) button {
+  margin-left: 14rem;
+}
+.services-container:nth-child(2) a {
+  margin-right: 3rem;
+}
+
